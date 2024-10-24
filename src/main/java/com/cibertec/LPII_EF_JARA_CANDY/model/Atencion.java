@@ -13,6 +13,7 @@ import jakarta.persistence.TemporalType;
 @Entity
 public class Atencion {
 	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private int id;
 	@Temporal(TemporalType.TIMESTAMP)
 	@DateTimeFormat(pattern = "yyyy-MM-dd'T'HH:mm")
